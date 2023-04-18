@@ -8,7 +8,10 @@
     <main>
         <h1>Convert from Fahrenheit to Celsius</h1>
         <script>
-
+            const userInput = prompt("Enter the value you want to convert", 212);
+            let chosenNumber = parseFloat(userInput);
+            let conversionResult = (chosenNumber - 32) * (5/9);
+            document.write(chosenNumber.toFixed(1) +  " F = " + conversionResult.toFixed(1) + " C");
         </script>
     </main>
 </body>
